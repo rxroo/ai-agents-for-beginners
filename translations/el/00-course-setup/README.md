@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "9b03446058b4eed46928ae5e46325ea0",
-  "translation_date": "2025-10-02T15:30:23+00:00",
+  "original_hash": "86273689a010b5efecaf7fa23104e0fb",
+  "translation_date": "2025-11-07T08:36:59+00:00",
   "source_file": "00-course-setup/README.md",
   "language_code": "el"
 }
@@ -13,19 +13,84 @@ CO_OP_TRANSLATOR_METADATA:
 
 Αυτό το μάθημα θα καλύψει πώς να εκτελέσετε τα δείγματα κώδικα αυτού του μαθήματος.
 
-## Εγγραφείτε με άλλους μαθητές και λάβετε βοήθεια
+## Ενταχθείτε σε Άλλους Μαθητές και Ζητήστε Βοήθεια
 
-Πριν ξεκινήσετε να κλωνοποιείτε το αποθετήριο σας, εγγραφείτε στο [κανάλι Discord AI Agents For Beginners](https://aka.ms/ai-agents/discord) για να λάβετε βοήθεια με τη ρύθμιση, να κάνετε ερωτήσεις σχετικά με το μάθημα ή να συνδεθείτε με άλλους μαθητές.
+Πριν ξεκινήσετε να κλωνοποιείτε το αποθετήριο σας, ενταχθείτε στο [κανάλι Discord AI Agents For Beginners](https://aka.ms/ai-agents/discord) για να λάβετε βοήθεια με τη ρύθμιση, να κάνετε ερωτήσεις σχετικά με το μάθημα ή να συνδεθείτε με άλλους μαθητές.
 
-## Κλωνοποιήστε ή Δημιουργήστε Fork σε αυτό το Αποθετήριο
+## Κλωνοποίηση ή Fork αυτού του Αποθετηρίου
 
-Για να ξεκινήσετε, παρακαλώ κλωνοποιήστε ή δημιουργήστε fork στο GitHub Repository. Αυτό θα δημιουργήσει τη δική σας έκδοση του υλικού του μαθήματος, ώστε να μπορείτε να εκτελέσετε, να δοκιμάσετε και να τροποποιήσετε τον κώδικα!
+Για να ξεκινήσετε, παρακαλώ κλωνοποιήστε ή κάντε fork το αποθετήριο GitHub. Αυτό θα δημιουργήσει τη δική σας έκδοση του υλικού του μαθήματος ώστε να μπορείτε να εκτελέσετε, να δοκιμάσετε και να τροποποιήσετε τον κώδικα!
 
-Αυτό μπορεί να γίνει κάνοντας κλικ στον σύνδεσμο για <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">δημιουργία fork στο αποθετήριο</a>.
+Αυτό μπορεί να γίνει κάνοντας κλικ στον σύνδεσμο για <a href="https://github.com/microsoft/ai-agents-for-beginners/fork" target="_blank">fork το αποθετήριο</a>.
 
 Τώρα θα πρέπει να έχετε τη δική σας έκδοση του μαθήματος στον παρακάτω σύνδεσμο:
 
 ![Forked Repo](../../../translated_images/forked-repo.33f27ca1901baa6a5e13ec3eb1f0ddd3a44d936d91cc8cfb19bfdb9688bd2c3d.el.png)
+
+### Κλωνοποίηση με Μικρό Ιστορικό (συνιστάται για εργαστήρια / Codespaces)
+
+  >Το πλήρες αποθετήριο μπορεί να είναι μεγάλο (~3 GB) όταν κατεβάζετε όλο το ιστορικό και όλα τα αρχεία. Εάν παρακολουθείτε μόνο το εργαστήριο ή χρειάζεστε μόνο λίγους φακέλους μαθημάτων, μια κλωνοποίηση με μικρό ιστορικό (ή μερική κλωνοποίηση) αποφεύγει το μεγαλύτερο μέρος αυτής της λήψης, μειώνοντας το ιστορικό και/ή παραλείποντας blobs.
+
+#### Γρήγορη κλωνοποίηση με μικρό ιστορικό — ελάχιστο ιστορικό, όλα τα αρχεία
+
+Αντικαταστήστε το `<your-username>` στις παρακάτω εντολές με το URL του fork σας (ή το upstream URL αν προτιμάτε).
+
+Για να κλωνοποιήσετε μόνο το πιο πρόσφατο ιστορικό commit (μικρή λήψη):
+
+```bash|powershell
+git clone --depth 1 https://github.com/<your-username>/ai-agents-for-beginners.git
+```
+
+Για να κλωνοποιήσετε ένα συγκεκριμένο branch:
+
+```bash|powershell
+git clone --depth 1 --branch <branch-name> https://github.com/<your-username>/ai-agents-for-beginners.git
+```
+
+#### Μερική (σπάνια) κλωνοποίηση — ελάχιστα blobs + μόνο επιλεγμένοι φάκελοι
+
+Αυτό χρησιμοποιεί μερική κλωνοποίηση και sparse-checkout (απαιτεί Git 2.25+ και συνιστάται σύγχρονο Git με υποστήριξη μερικής κλωνοποίησης):
+
+```bash|powershell
+git clone --depth 1 --filter=blob:none --sparse https://github.com/<your-username>/ai-agents-for-beginners.git
+```
+
+Μεταβείτε στον φάκελο του αποθετηρίου:
+
+```bash|powershell
+cd ai-agents-for-beginners
+```
+
+Στη συνέχεια, καθορίστε ποιους φακέλους θέλετε (το παράδειγμα παρακάτω δείχνει δύο φακέλους):
+
+```bash|powershell
+git sparse-checkout set 00-course-setup 01-intro-to-ai-agents
+```
+
+Αφού κλωνοποιήσετε και επαληθεύσετε τα αρχεία, αν χρειάζεστε μόνο αρχεία και θέλετε να ελευθερώσετε χώρο (χωρίς ιστορικό git), παρακαλώ διαγράψτε τα μεταδεδομένα του αποθετηρίου (💀μη αναστρέψιμο — θα χάσετε όλη τη λειτουργικότητα του Git: χωρίς commits, pulls, pushes ή πρόσβαση στο ιστορικό).
+
+```bash
+# zsh/bash
+rm -rf .git
+```
+
+```powershell
+# PowerShell
+Remove-Item -Recurse -Force .git
+```
+
+#### Χρήση GitHub Codespaces (συνιστάται για αποφυγή μεγάλων τοπικών λήψεων)
+
+- Δημιουργήστε έναν νέο Codespace για αυτό το αποθετήριο μέσω του [GitHub UI](https://github.com/codespaces).  
+
+- Στο τερματικό του νεοδημιουργημένου codespace, εκτελέστε μία από τις εντολές κλωνοποίησης με μικρό/σπάνιο ιστορικό παραπάνω για να φέρετε μόνο τους φακέλους μαθημάτων που χρειάζεστε στον χώρο εργασίας του Codespace.
+- Προαιρετικά: μετά την κλωνοποίηση μέσα στο Codespaces, αφαιρέστε το .git για να ανακτήσετε επιπλέον χώρο (δείτε τις εντολές αφαίρεσης παραπάνω).
+- Σημείωση: Αν προτιμάτε να ανοίξετε το αποθετήριο απευθείας στο Codespaces (χωρίς επιπλέον κλωνοποίηση), να γνωρίζετε ότι το Codespaces θα κατασκευάσει το περιβάλλον devcontainer και μπορεί να εξακολουθεί να προμηθεύει περισσότερα από όσα χρειάζεστε. Η κλωνοποίηση μιας μικρής έκδοσης μέσα σε ένα νέο Codespace σας δίνει περισσότερο έλεγχο στη χρήση του δίσκου.
+
+#### Συμβουλές
+
+- Πάντα αντικαταστήστε το URL κλωνοποίησης με το fork σας αν θέλετε να επεξεργαστείτε/κάνετε commit.
+- Αν αργότερα χρειαστείτε περισσότερο ιστορικό ή αρχεία, μπορείτε να τα ανακτήσετε ή να προσαρμόσετε το sparse-checkout για να συμπεριλάβετε επιπλέον φακέλους.
 
 ## Εκτέλεση του Κώδικα
 
@@ -35,145 +100,166 @@ CO_OP_TRANSLATOR_METADATA:
 
 **Απαιτεί Λογαριασμό GitHub - Δωρεάν**:
 
-1) Semantic Kernel Agent Framework + GitHub Models Marketplace. Ετικέτα: (semantic-kernel.ipynb)
-2) AutoGen Framework + GitHub Models Marketplace. Ετικέτα: (autogen.ipynb)
+1) Semantic Kernel Agent Framework + GitHub Models Marketplace. Ετικέτα ως (semantic-kernel.ipynb)
+2) AutoGen Framework + GitHub Models Marketplace. Ετικέτα ως (autogen.ipynb)
 
 **Απαιτεί Συνδρομή Azure**:
-3) Azure AI Foundry + Azure AI Agent Service. Ετικέτα: (azureaiagent.ipynb)
+3) Azure AI Foundry + Azure AI Agent Service. Ετικέτα ως (azureaiagent.ipynb)
 
-Σας ενθαρρύνουμε να δοκιμάσετε και τους τρεις τύπους παραδειγμάτων για να δείτε ποιος σας ταιριάζει καλύτερα.
+Σας ενθαρρύνουμε να δοκιμάσετε και τους τρεις τύπους παραδειγμάτων για να δείτε ποιος λειτουργεί καλύτερα για εσάς.
 
-Η επιλογή που θα κάνετε θα καθορίσει ποια βήματα ρύθμισης πρέπει να ακολουθήσετε παρακάτω:
+Όποια επιλογή κι αν επιλέξετε, θα καθορίσει ποια βήματα ρύθμισης πρέπει να ακολουθήσετε παρακάτω:
 
 ## Απαιτήσεις
 
 - Python 3.12+
-  - **ΣΗΜΕΙΩΣΗ**: Εάν δεν έχετε εγκατεστημένο το Python 3.12, βεβαιωθείτε ότι το εγκαταστήσατε. Στη συνέχεια, δημιουργήστε το venv χρησιμοποιώντας το python3.12 για να διασφαλίσετε ότι οι σωστές εκδόσεις εγκαθίστανται από το αρχείο requirements.txt.
+  - **ΣΗΜΕΙΩΣΗ**: Αν δεν έχετε εγκατεστημένο το Python3.12, βεβαιωθείτε ότι το εγκαταστήσατε. Στη συνέχεια, δημιουργήστε το venv σας χρησιμοποιώντας python3.12 για να διασφαλίσετε ότι οι σωστές εκδόσεις εγκαθίστανται από το αρχείο requirements.txt.
   
     >Παράδειγμα
 
     Δημιουργία καταλόγου Python venv:
 
-    ``` bash
-    python3 -m venv venv
+    ```bash|powershell
+    python -m venv venv
     ```
 
-    Στη συνέχεια, ενεργοποιήστε το περιβάλλον venv για:
-
-    macOS και Linux
+    Στη συνέχεια ενεργοποιήστε το περιβάλλον venv για:
 
     ```bash
+    # zsh/bash
     source venv/bin/activate
     ```
   
-    Windows
-
-    ```bash
+    ```dos
+    # Command Prompt for Windows
     venv\Scripts\activate
+    ```
+
+- .NET 10+: Για τα δείγματα κώδικα που χρησιμοποιούν .NET, βεβαιωθείτε ότι έχετε εγκαταστήσει το [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) ή νεότερο. Στη συνέχεια, ελέγξτε την εγκατεστημένη έκδοση του .NET SDK:
+
+    ```bash|powershell
+    dotnet --list-sdks
     ```
 
 - Λογαριασμός GitHub - Για πρόσβαση στο GitHub Models Marketplace
 - Συνδρομή Azure - Για πρόσβαση στο Azure AI Foundry
-- Λογαριασμός Azure AI Foundry - Για πρόσβαση στο Azure AI Agent Service
+- Λογαριασμός Azure AI Foundry - Για πρόσβαση στην Υπηρεσία Azure AI Agent
 
 Έχουμε συμπεριλάβει ένα αρχείο `requirements.txt` στη ρίζα αυτού του αποθετηρίου που περιέχει όλα τα απαραίτητα πακέτα Python για την εκτέλεση των δειγμάτων κώδικα.
 
 Μπορείτε να τα εγκαταστήσετε εκτελώντας την παρακάτω εντολή στο τερματικό σας στη ρίζα του αποθετηρίου:
 
-```bash
+```bash|powershell
 pip install -r requirements.txt
 ```
+
 Συνιστούμε τη δημιουργία ενός εικονικού περιβάλλοντος Python για να αποφύγετε τυχόν συγκρούσεις και προβλήματα.
 
 ## Ρύθμιση VSCode
-Βεβαιωθείτε ότι χρησιμοποιείτε τη σωστή έκδοση του Python στο VSCode.
+
+Βεβαιωθείτε ότι χρησιμοποιείτε τη σωστή έκδοση Python στο VSCode.
 
 ![image](https://github.com/user-attachments/assets/a85e776c-2edb-4331-ae5b-6bfdfb98ee0e)
 
-## Ρύθμιση για Δείγματα με Χρήση GitHub Models 
+## Ρύθμιση για Δείγματα που Χρησιμοποιούν GitHub Models 
 
-### Βήμα 1: Αποκτήστε το Προσωπικό Access Token (PAT) του GitHub
+### Βήμα 1: Ανάκτηση του Προσωπικού Access Token (PAT) του GitHub
 
-Αυτό το μάθημα χρησιμοποιεί το GitHub Models Marketplace, παρέχοντας δωρεάν πρόσβαση σε Large Language Models (LLMs) που θα χρησιμοποιήσετε για να δημιουργήσετε AI Agents.
+Αυτό το μάθημα χρησιμοποιεί το GitHub Models Marketplace, παρέχοντας δωρεάν πρόσβαση σε Μεγάλα Γλωσσικά Μοντέλα (LLMs) που θα χρησιμοποιήσετε για να δημιουργήσετε AI Agents.
 
-Για να χρησιμοποιήσετε τα GitHub Models, θα χρειαστεί να δημιουργήσετε ένα [GitHub Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
+Για να χρησιμοποιήσετε τα GitHub Models, θα χρειαστεί να δημιουργήσετε ένα [Προσωπικό Access Token του GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 Αυτό μπορεί να γίνει πηγαίνοντας στις <a href="https://github.com/settings/personal-access-tokens" target="_blank">ρυθμίσεις Προσωπικών Access Tokens</a> στον λογαριασμό σας στο GitHub.
 
-Παρακαλώ ακολουθήστε την [Αρχή της Ελάχιστης Απαραίτητης Πρόσβασης](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) κατά τη δημιουργία του token. Αυτό σημαίνει ότι πρέπει να δώσετε στο token μόνο τις άδειες που χρειάζεται για να εκτελέσει τα δείγματα κώδικα αυτού του μαθήματος.
+Παρακαλώ ακολουθήστε την [Αρχή της Ελάχιστης Προνομιακής Πρόσβασης](https://docs.github.com/en/get-started/learning-to-code/storing-your-secrets-safely) κατά τη δημιουργία του token σας. Αυτό σημαίνει ότι πρέπει να δώσετε στο token μόνο τις άδειες που χρειάζεται για να εκτελέσει τα δείγματα κώδικα αυτού του μαθήματος.
 
-1. Επιλέξτε την επιλογή `Fine-grained tokens` στην αριστερή πλευρά της οθόνης σας πηγαίνοντας στις **Ρυθμίσεις Προγραμματιστή**.
-   ![](../../../translated_images/profile_developer_settings.410a859fe749c755c859d414294c5908e307222b2c61819c3203bbeed4470e25.el.png)
+1. Επιλέξτε την επιλογή `Fine-grained tokens` στην αριστερή πλευρά της οθόνης σας μεταβαίνοντας στις **Ρυθμίσεις Προγραμματιστή**.
 
-    Στη συνέχεια, επιλέξτε `Generate new token`.
+   ![Ρυθμίσεις Προγραμματιστή](../../../translated_images/profile_developer_settings.410a859fe749c755c859d414294c5908e307222b2c61819c3203bbeed4470e25.el.png)
 
-    ![Generate Token](../../../translated_images/fga_new_token.1c1a234afe202ab37483944a291ee80c1868e1e78082fd6bd4180fea5d5a15b4.el.png)
+   Στη συνέχεια, επιλέξτε `Generate new token`.
 
-2. Εισάγετε ένα περιγραφικό όνομα για το token που αντικατοπτρίζει τον σκοπό του, ώστε να είναι εύκολο να το αναγνωρίσετε αργότερα.
+   ![Δημιουργία Token](../../../translated_images/fga_new_token.1c1a234afe202ab37483944a291ee80c1868e1e78082fd6bd4180fea5d5a15b4.el.png)
+
+2. Εισάγετε ένα περιγραφικό όνομα για το token σας που να αντικατοπτρίζει τον σκοπό του, ώστε να είναι εύκολο να το αναγνωρίσετε αργότερα.
 
     🔐 Σύσταση Διάρκειας Token
 
     Συνιστώμενη διάρκεια: 30 ημέρες
-    Για πιο ασφαλή προσέγγιση, μπορείτε να επιλέξετε μικρότερη περίοδο—όπως 7 ημέρες 🛡️
+    Για πιο ασφαλή στάση, μπορείτε να επιλέξετε μικρότερη περίοδο—όπως 7 ημέρες 🛡️
     Είναι ένας εξαιρετικός τρόπος να θέσετε έναν προσωπικό στόχο και να ολοκληρώσετε το μάθημα ενώ η μαθησιακή σας ορμή είναι υψηλή 🚀.
 
-    ![Token Name and Expiration](../../../translated_images/token-name-expiry-date.a095fb0de63868640a4c82d6b1bbc92b482930a663917a5983a3c7cd1ef86b77.el.png)
+    ![Όνομα και Λήξη Token](../../../translated_images/token-name-expiry-date.a095fb0de63868640a4c82d6b1bbc92b482930a663917a5983a3c7cd1ef86b77.el.png)
 
 3. Περιορίστε το πεδίο του token στο fork αυτού του αποθετηρίου.
 
-    ![Limit scope to fork repository](../../../translated_images/token_repository_limit.924ade5e11d9d8bb6cd21293987e4579dea860e2ba66d607fb46e49524d53644.el.png)
+    ![Περιορισμός πεδίου στο fork αποθετηρίου](../../../translated_images/token_repository_limit.924ade5e11d9d8bb6cd21293987e4579dea860e2ba66d607fb46e49524d53644.el.png)
 
 4. Περιορίστε τις άδειες του token: Στην καρτέλα **Permissions**, κάντε κλικ στην καρτέλα **Account** και πατήστε το κουμπί "+ Add permissions". Θα εμφανιστεί ένα dropdown. Αναζητήστε **Models** και επιλέξτε το κουτάκι.
-    ![Add Models Permission](../../../translated_images/add_models_permissions.c0c44ed8b40fc143dc87792da9097d715b7de938354e8f771d65416ecc7816b8.el.png)
 
-5. Επαληθεύστε τις απαιτούμενες άδειες πριν δημιουργήσετε το token. ![Verify Permissions](../../../translated_images/verify_permissions.06bd9e43987a8b219f171bbcf519e45ababae35b844f5e9757e10afcb619b936.el.png)
+    ![Προσθήκη Άδειας Models](../../../translated_images/add_models_permissions.c0c44ed8b40fc143dc87792da9097d715b7de938354e8f771d65416ecc7816b8.el.png)
 
-6. Πριν δημιουργήσετε το token, βεβαιωθείτε ότι είστε έτοιμοι να αποθηκεύσετε το token σε ασφαλές μέρος, όπως ένα θησαυροφυλάκιο διαχειριστή κωδικών πρόσβασης, καθώς δεν θα εμφανιστεί ξανά μετά τη δημιουργία του. ![Store Token Securely](../../../translated_images/store_token_securely.08ee2274c6ad6caf3482f1cd1bad7ca3fdca1ce737bc485bfa6499c84297c789.el.png)
+5. Επαληθεύστε τις απαιτούμενες άδειες πριν δημιουργήσετε το token. ![Επαλήθευση Αδειών](../../../translated_images/verify_permissions.06bd9e43987a8b219f171bbcf519e45ababae35b844f5e9757e10afcb619b936.el.png)
+
+6. Πριν δημιουργήσετε το token, βεβαιωθείτε ότι είστε έτοιμοι να αποθηκεύσετε το token σε ασφαλές μέρος όπως ένα θησαυροφυλάκιο διαχειριστή κωδικών πρόσβασης, καθώς δεν θα εμφανιστεί ξανά μετά τη δημιουργία του. ![Αποθήκευση Token με Ασφάλεια](../../../translated_images/store_token_securely.08ee2274c6ad6caf3482f1cd1bad7ca3fdca1ce737bc485bfa6499c84297c789.el.png)
 
 Αντιγράψτε το νέο token που μόλις δημιουργήσατε. Τώρα θα το προσθέσετε στο αρχείο `.env` που περιλαμβάνεται σε αυτό το μάθημα.
 
-### Βήμα 2: Δημιουργήστε το Αρχείο `.env`
+### Βήμα 2: Δημιουργία του Αρχείου `.env`
 
 Για να δημιουργήσετε το αρχείο `.env`, εκτελέστε την παρακάτω εντολή στο τερματικό σας.
 
 ```bash
+# zsh/bash
 cp .env.example .env
+```
+
+```powershell
+# PowerShell
+Copy-Item .env.example .env
 ```
 
 Αυτό θα αντιγράψει το αρχείο παραδείγματος και θα δημιουργήσει ένα `.env` στον κατάλογό σας, όπου θα συμπληρώσετε τις τιμές για τις μεταβλητές περιβάλλοντος.
 
 Με το token σας αντιγραμμένο, ανοίξτε το αρχείο `.env` στον αγαπημένο σας επεξεργαστή κειμένου και επικολλήστε το token στο πεδίο `GITHUB_TOKEN`.
-![GitHub Token Field](../../../translated_images/github_token_field.20491ed3224b5f4ab24d10ced7a68c4aba2948fe8999cfc8675edaa16f5e5681.el.png)
+
+![Πεδίο Token GitHub](../../../translated_images/github_token_field.20491ed3224b5f4ab24d10ced7a68c4aba2948fe8999cfc8675edaa16f5e5681.el.png)
 
 Τώρα θα πρέπει να μπορείτε να εκτελέσετε τα δείγματα κώδικα αυτού του μαθήματος.
 
-## Ρύθμιση για Δείγματα με Χρήση Azure AI Foundry και Azure AI Agent Service
+## Ρύθμιση για Δείγματα που Χρησιμοποιούν Azure AI Foundry και Azure AI Agent Service
 
-### Βήμα 1: Αποκτήστε το Endpoint του Έργου σας στο Azure
+### Βήμα 1: Ανάκτηση του Endpoint του Έργου Azure
 
-Ακολουθήστε τα βήματα για τη δημιουργία ενός hub και ενός έργου στο Azure AI Foundry που βρίσκονται εδώ: [Επισκόπηση πόρων Hub](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/ai-resources)
+Ακολουθήστε τα βήματα για τη δημιουργία ενός hub και έργου στο Azure AI Foundry που βρίσκονται εδώ: [Επισκόπηση πόρων hub](https://learn.microsoft.com/azure/ai-foundry/concepts/ai-resources)
 
-Αφού δημιουργήσετε το έργο σας, θα χρειαστεί να αποκτήσετε τη συμβολοσειρά σύνδεσης για το έργο σας.
+Αφού δημιουργήσετε το έργο σας, θα χρειαστεί να ανακτήσετε τη συμβολοσειρά σύνδεσης για το έργο σας.
 
 Αυτό μπορεί να γίνει πηγαίνοντας στη σελίδα **Επισκόπηση** του έργου σας στην πύλη Azure AI Foundry.
 
-![Project Connection String](../../../translated_images/project-endpoint.8cf04c9975bbfbf18f6447a599550edb052e52264fb7124d04a12e6175e330a5.el.png)
+![Συμβολοσειρά Σύνδεσης Έργου](../../../translated_images/project-endpoint.8cf04c9975bbfbf18f6447a599550edb052e52264fb7124d04a12e6175e330a5.el.png)
 
-### Βήμα 2: Δημιουργήστε το Αρχείο `.env`
+### Βήμα 2: Δημιουργία του Αρχείου `.env`
 
 Για να δημιουργήσετε το αρχείο `.env`, εκτελέστε την παρακάτω εντολή στο τερματικό σας.
 
 ```bash
+# zsh/bash
 cp .env.example .env
+```
+
+```powershell
+# PowerShell
+Copy-Item .env.example .env
 ```
 
 Αυτό θα αντιγράψει το αρχείο παραδείγματος και θα δημιουργήσει ένα `.env` στον κατάλογό σας, όπου θα συμπληρώσετε τις τιμές για τις μεταβλητές περιβάλλοντος.
 
 Με το token σας αντιγραμμένο, ανοίξτε το αρχείο `.env` στον αγαπημένο σας επεξεργαστή κειμένου και επικολλήστε το token στο πεδίο `PROJECT_ENDPOINT`.
 
-### Βήμα 3: Συνδεθείτε στο Azure
+### Βήμα 3: Σύνδεση στο Azure
 
-Ως βέλτιστη πρακτική ασφαλείας, θα χρησιμοποιήσουμε [keyless authentication](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) για να συνδεθούμε στο Azure OpenAI με το Microsoft Entra ID.
+Ως βέλτιστη πρακτική ασφαλείας, θα χρησιμοποιήσουμε [αυθεντικοποίηση χωρίς κλειδιά](https://learn.microsoft.com/azure/developer/ai/keyless-connections?tabs=csharp%2Cazure-cli?WT.mc_id=academic-105485-koreyst) για να αυθεντικοποιηθούμε στο Azure OpenAI με το Microsoft Entra ID. 
 
 Στη συνέχεια, ανοίξτε ένα τερματικό και εκτελέστε `az login --use-device-code` για να συνδεθείτε στον λογαριασμό σας στο Azure.
 
@@ -183,7 +269,7 @@ cp .env.example .env
 
 Για το μάθημα Agentic RAG - Μάθημα 5 - υπάρχουν δείγματα που χρησιμοποιούν Azure Search και Azure OpenAI.
 
-Εάν θέλετε να εκτελέσετε αυτά τα δείγματα, θα χρειαστεί να προσθέσετε τις παρακάτω μεταβλητές περιβάλλοντος στο αρχείο `.env` σας:
+Αν θέλετε να εκτελέσετε αυτά τα δείγματα, θα χρειαστεί να προσθέσετε τις παρακάτω μεταβλητές περιβάλλοντος στο αρχείο `.env` σας:
 
 ### Σελίδα Επισκόπησης (Έργο)
 
@@ -197,7 +283,7 @@ cp .env.example .env
 
 - `AZURE_OPENAI_RESOURCE_GROUP` - Μεταβείτε στις **Ιδιότητες Έργου** στη σελίδα **Επισκόπηση** του **Κέντρου Διαχείρισης**.
 
-- `GLOBAL_LLM_SERVICE` - Στην ενότητα **Connected resources**, βρείτε το όνομα σύνδεσης **Azure AI Services**. Εάν δεν αναφέρεται, ελέγξτε την **πύλη Azure** στην ομάδα πόρων σας για το όνομα του πόρου AI Services.
+- `GLOBAL_LLM_SERVICE` - Στην καρτέλα **Συνδεδεμένοι πόροι**, βρείτε το όνομα σύνδεσης **Azure AI Services**. Αν δεν αναφέρεται, ελέγξτε την **πύλη Azure** κάτω από την ομάδα πόρων σας για το όνομα του πόρου AI Services.
 
 ### Σελίδα Μοντέλα + Endpoints
 
@@ -207,37 +293,16 @@ cp .env.example .env
 
 ### Πύλη Azure
 
-- `AZURE_OPENAI_ENDPOINT` - Αναζητήστε τις **Υπηρεσίες Azure AI**, κάντε κλικ σε αυτές, στη συνέχεια μεταβείτε στη **Διαχείριση Πόρων**, **Κλειδιά και Endpoint**, και αντιγράψτε το endpoint που λέει "Language APIs".
-
-- `AZURE_OPENAI_API_KEY` - Από την ίδια οθόνη, αντιγράψτε το ΚΛΕΙΔΙ 1 ή ΚΛΕΙΔΙ 2.
-
-- `AZURE_SEARCH_SERVICE_ENDPOINT` - Βρείτε τον πόρο σας **Azure AI Search**, κάντε κλικ σε αυτόν και δείτε την **Επισκόπηση**.
-
-- `AZURE_SEARCH_API_KEY` - Στη συνέχεια, μεταβείτε στις **Ρυθμίσεις** και μετά στα **Κλειδιά** για να αντιγράψετε το κύριο ή δευτερεύον κλειδί διαχειριστή.
-
-### Εξωτερική Ιστοσελίδα
-
-- `AZURE_OPENAI_API_VERSION` - Επισκεφθείτε τη σελίδα [API version lifecycle](https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation#latest-ga-api-release) στην ενότητα **Latest GA API release**.
-
-### Ρύθμιση keyless authentication
-
-Αντί να σκληροκωδικοποιήσουμε τα διαπιστευτήρια σας, θα χρησιμοποιήσουμε μια σύνδεση χωρίς κλειδιά με το Azure OpenAI. Για να το κάνουμε αυτό, θα εισάγουμε το `DefaultAzureCredential` και αργότερα θα καλέσουμε τη συνάρτηση `DefaultAzureCredential` για να λάβουμε το διαπιστευτήριο.
-
-```python
-from azure.identity import DefaultAzureCredential, InteractiveBrowserCredential
-```
-
-## Κολλήσατε Κάπου;
-
-Εάν αντιμετωπίζετε οποιοδήποτε πρόβλημα με αυτή τη ρύθμιση, μπείτε στο <a href="https://discord.gg/kzRShWzttr" target="_blank">Azure AI Community Discord</a> ή <a href="https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst" target="_blank">δημιουργήστε ένα ζήτημα</a>.
+- `AZURE_OPENAI_ENDPOINT` - Αναζητήστε **Υπηρεσίες Azure AI**, κάντε κλικ σε αυτό, στη συνέχεια
+Αν αντιμετωπίσετε οποιοδήποτε πρόβλημα με την εκτέλεση αυτής της ρύθμισης, μπείτε στο <a href="https://discord.gg/kzRShWzttr" target="_blank">Azure AI Community Discord</a> ή <a href="https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst" target="_blank">δημιουργήστε ένα ζήτημα</a>.
 
 ## Επόμενο Μάθημα
 
-Τώρα είστε έτοιμοι να εκτελέσετε τον κώδικα αυτού του μαθήματος. Καλή μάθηση για τον κόσμο των AI Agents! 
+Είστε πλέον έτοιμοι να εκτελέσετε τον κώδικα για αυτό το μάθημα. Καλή μάθηση για τον κόσμο των AI Agents!
 
-[Εισαγωγή στους AI Agents και Χρήσεις](../01-intro-to-ai-agents/README.md)
+[Εισαγωγή στους AI Agents και τις Χρήσεις τους](../01-intro-to-ai-agents/README.md)
 
 ---
 
 **Αποποίηση ευθύνης**:  
-Αυτό το έγγραφο έχει μεταφραστεί χρησιμοποιώντας την υπηρεσία αυτόματης μετάφρασης [Co-op Translator](https://github.com/Azure/co-op-translator). Παρόλο που καταβάλλουμε προσπάθειες για ακρίβεια, παρακαλούμε να έχετε υπόψη ότι οι αυτοματοποιημένες μεταφράσεις ενδέχεται να περιέχουν λάθη ή ανακρίβειες. Το πρωτότυπο έγγραφο στη μητρική του γλώσσα θα πρέπει να θεωρείται η αυθεντική πηγή. Για κρίσιμες πληροφορίες, συνιστάται επαγγελματική ανθρώπινη μετάφραση. Δεν φέρουμε ευθύνη για τυχόν παρεξηγήσεις ή εσφαλμένες ερμηνείες που προκύπτουν από τη χρήση αυτής της μετάφρασης.
+Αυτό το έγγραφο έχει μεταφραστεί χρησιμοποιώντας την υπηρεσία αυτόματης μετάφρασης [Co-op Translator](https://github.com/Azure/co-op-translator). Παρόλο που καταβάλλουμε προσπάθειες για ακρίβεια, παρακαλούμε να έχετε υπόψη ότι οι αυτόματες μεταφράσεις ενδέχεται να περιέχουν λάθη ή ανακρίβειες. Το πρωτότυπο έγγραφο στη μητρική του γλώσσα θα πρέπει να θεωρείται η αυθεντική πηγή. Για κρίσιμες πληροφορίες, συνιστάται επαγγελματική ανθρώπινη μετάφραση. Δεν φέρουμε ευθύνη για τυχόν παρεξηγήσεις ή εσφαλμένες ερμηνείες που προκύπτουν από τη χρήση αυτής της μετάφρασης.
